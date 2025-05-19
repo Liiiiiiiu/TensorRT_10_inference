@@ -1,0 +1,13 @@
+fastreid:
+    onnx_file:     "../weights/PED_EXT_021.onnx"
+    engine_file:   "../weights/PED_EXT_021.trt"
+    BATCH_SIZE:    1
+    INPUT_CHANNEL: 3
+    IMAGE_WIDTH:   128
+    IMAGE_HEIGHT:  256
+    image_order:   "BCHW"
+    channel_order: "BGR"
+    img_mean:      [ 0.485, 0.456, 0.406 ]
+    img_std:       [ 0.229, 0.224, 0.225 ]
+    alpha:         255.0
+    resize:        "keep_ratio"

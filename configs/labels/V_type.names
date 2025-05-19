@@ -1,0 +1,7 @@
+0: 'Bus',
+1: 'Car',
+2: 'Occlusion',
+3: 'Others',
+4: 'SUV',
+5: 'Truck',
+6: 'Van'

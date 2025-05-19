@@ -1,0 +1,19 @@
+yolov8Pose:
+    onnx_file:     "../weights/yolov8n-pose.onnx"
+    engine_file:   "../weights/yolov8n-pose.trt"
+    labels_file:   "../configs/labels/coco.names"
+    BATCH_SIZE:    1
+    INPUT_CHANNEL: 3
+    IMAGE_WIDTH:   640
+    IMAGE_HEIGHT:  640
+    image_order:   "BCHW"
+    channel_order: "BGR"
+    obj_threshold: 0.4
+    nms_threshold: 0.7
+    agnostic:      False
+    strides:       [8, 16, 32]
+    num_anchors:   [ 0, 0, 0 ]
+    img_mean:      [ 0, 0, 0 ]
+    img_std:       [ 1, 1, 1 ]
+    alpha:         255.0
+    resize:        "keep_ratio"

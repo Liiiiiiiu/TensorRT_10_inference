@@ -1,0 +1,14 @@
+PlateUS:
+    onnx_file:     "../weights/PlateUS.onnx"
+    engine_file:   "../weights/PlateUS.trt"
+    labels_file:   "../configs/labels/PlateUS.names"
+    BATCH_SIZE:    1
+    INPUT_CHANNEL: 3
+    IMAGE_WIDTH:   168
+    IMAGE_HEIGHT:  48
+    image_order:   "BCHW"
+    channel_order: "BGR"
+    img_mean:      [ 0.588, 0.588, 0.588 ]
+    img_std:       [ 0.193, 0.193, 0.193 ]
+    alpha:         255.0
+    resize:        "directly"
